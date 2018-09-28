@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>西山居-客服中心</title>
+    <link rel="shortcut icon" href="../images/小图标15.gif"/>
+    <link rel="stylesheet" href="kefuzhongxin.css" />
+    <script src="../public/js/jquery-1.9.1.js"></script>
+</head>
+<body>
+    <!-- 客服中心头部-->
+    <div class="head" >
+        <div class="wrap">
+            <div class="top clearfix">
+                <div class="oper">
+                    <div class="out"><a href="">充值</a></div>
+                    <div class="out"><a href="">安全</a></div>
+                    <div class="game">
+                        <a href="javascript:;">金山游戏</a>
+                        <div class="list clearfix" id="wdyx" style="display: none;">
+                            <a href="">剑侠情缘网络版叁</a>
+                            <a href="">剑侠世界-剑世区</a>
+                            <a href="">剑侠世界-绿色区</a>
+                            <a href="">剑网1经典版</a>
+                            <a href="">剑网1免费区</a>
+                            <a href="">剑网1收费区</a>
+                            <a href="">剑网2新传</a>
+                            <a href="">剑网2免费区</a>
+                            <a href="">剑网2收费区</a>
+                            <a href="">剑网2外传</a>
+                            <a href="">反恐行动</a>
+                            <a href="">自由禁区</a>
+                            <a href="">封神榜【玄幻】</a>
+                            <a href="">春秋Q传【Q版】</a>
+                            <a href="">剑侠世界2【手游】</a>
+                            <a href="">三国战神</a>
+                            <a href="">剑侠世界手游</a>
+                            <a href="">全民神将</a>
+                            <a href="">少女咖啡枪</a>
+                            <a href="">魔域正版手游</a>
+                        </div>
+                    </div>
+                </div>
+                <a href=""><img src="../images/kefu.png" alt=""></a>
+            </div>
+
+            <div class="nav clearfix">
+                <ul class="sec">
+                    <li class="cur"><a href="" class="bg1">首页</a></li>
+                    <li><a href="" class="bg2">自助</a></li>
+                    <li><a href="" class="bg3">帮助</a></li>
+                    <li><a href="" class="bg4">公告</a></li>
+                </ul>
+                <a href=""><img src="../images/jxqy.png" alt=""></a>
+                <div class="search_wrap">
+                    <form>
+                        <input type="text" name="search" placeholder="请输入方案编码或问题" class="search_input">
+                        <input type="submit" class="submit" value="" id="searchInput">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="wrap cbg">
+            <!--客服中心图片轮换-->
+            <div class="banner_wrap">
+                <div class="banner_slide">
+                    <div class="scroll_mid">
+                        <img src="../images/kf_1.jpg" id="pic" />
+                        <ul id="scroll_number">
+                            <li class="scroll_number_over" onMouseOver="show(1)" onMouseOut="start()"></li>
+                            <li onMouseOver="show(2)" onMouseOut="start()"></li>
+                            <li onMouseOver="show(3)" onMouseOut="start()"></li>
+                            <li onMouseOver="show(4)" onMouseOut="start()"></li>
+                            <li onMouseOver="show(5)" onMouseOut="start()"></li>
+                            <li onMouseOver="show(6)" onMouseOut="start()"></li>
+                            <li onMouseOver="show(7)" onMouseOut="start()"></li>
+                            <li onMouseOver="show(8)" onMouseOut="start()"></li>
+                            <li onMouseOver="show(9)" onMouseOut="start()"></li>
+                            <li onMouseOver="show(10)" onMouseOut="start()"></li>
+                            <li onMouseOver="show(11)" onMouseOut="start()"></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="login_wrap">
+                    <div class="t_head">
+                        <img src="../images/jiao.png" alt="">
+                    </div>
+                    <div class="login_zone">
+                        <div class="mask"></div>
+                        <div class="login">
+                            <h3>登录金山通行证</h3>
+                            <p class="login_para">亲爱的玩家：</p>
+                            <p class="login_para">请登录客服个人中心，获取更优质的服务~！</p>
+                            <a class="confirm_xoyo" href="">请登录</a>
+                            <a href="" class="login_common process">查询业务办理进度</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--客服大事记-->
+            <div class="pmd_border">
+                <p class="pmd_title">客服大事记：</p>
+                <div style="width:910px;overflow:hidden;height:30px;">
+                    <div style="overflow: hidden;height:120px;position: relative">
+                        <div class="pmd_wrap" style="overflow: hidden;height:120px;position: absolute;top:0;animation:10s move infinite linear;">
+                            <ul>
+                                <li><a href="">致歉信-7月25日客服服务中断问题说明</a></li>
+                                <li><a href="">7月14日身份证相关业务延期审核公告</a></li>
+                                <li><a href="">金山实体令牌通用版服务关闭公告</a></li>
+                                <li><a href="">致歉信-7月25日客服服务中断问题说明</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <p style="height: 15px"></p>
+
+            <!--修改绑定手机-->
+            <div class="floor">
+                <ul class="help clearfix">
+                    <a href=""><li><img src="../images/bdsj.png" alt=""><p>GM修改绑定手机</p><span>提供人工修改绑定手机服务</span></li></a>
+                    <a href=""><li><img src="../images/xjsfz.png" alt=""><p>重置虚假身份证</p><span>通行证虚假身份证修改业务</span></li></a>
+                    <a href=""><li><img src="../images/zhjd.png" alt=""><p>申请账号解冻</p><span>仅受理临时冻结解冻业务</span></li></a>
+                    <a href=""><li><img src="../images/wttj.png" alt=""><p>游戏问题提交</p><span>常见游戏相关问题提交通道</span></li></a>
+                    <a href=""><li><img src="../images/bdss.png" alt=""><p>被盗冻结申诉</p><span>涉及异常交易冻结申诉通道<br>游戏内被盗请通过热线反馈</span></li></a>
+                </ul>
+            </div>
+
+            <!--微信、微博客服-->
+            <div class="way">
+                <ul class="clearfix kind">
+                    <li class="wxbz">
+                        <div class="kf_hover wxkf" style="display: block;">
+                            <img src="../images/wxkf.png" alt="">
+                            <p>微信客服</p><span>通过微信，即时获知<br>更多剑网3服务资讯。</span>
+                        </div>
+
+                        <div class="kf_show wxkf2" style="display: none;">
+                            <p class="para_spe">扫一扫关注</p>
+                            <img src="../images/wxkf2.jpg" alt="">
+                            <div class="btn">微信客服</div>
+                        </div>
+                    </li>
+
+                    <li class="wbbz">
+                        <div class="kf_hover wbkf" style="display: block;">
+                            <img src="../images/wbkf.png" alt="">
+                            <p>微博客服</p><span>通过微博，即时获知<br>更多剑网3服务资讯</span>
+                        </div>
+                        <div class="kf_show wbkf2" style="display: none;">
+                            <p style="padding-top:20px;">剑网3客户服务</p>
+                            <p class="small">第一时间发布客服讯息</p>
+                            <a href="" class="btn">点击立即前往</a>
+                        </div>
+                    </li>
+
+                    <li class="ltbz">
+                        <div class="kf_hover gflt">
+                            <img src="../images/wflt.png" alt="">
+                            <p>官方论坛</p><span>通过官方论坛，了解实时资讯</span>
+                        </div>
+                        <div class="kf_show gflt2">
+                            <p style="padding-top:20px;">剑网三官方论坛</p>
+                            <p class="small">与更多玩家交流</p>
+                            <a href="" class="btn">点击立即前往</a>
+                        </div>
+                    </li>
+
+                    <li class="dhbz">
+                        <div class="kf_hover kfrx">
+                            <img src="../images/kfrx.png" alt="">
+                            <p>客服热线</p><span>028-85309911</span>
+                        </div>
+                        <div class="kf_show kfrx2">
+                            <p class="para_spe" style="padding-top:20px;">客服热线</p>
+                            <p class="para_spe" style="font-size: 16px;padding-top:20px;">028-85309911</p>
+                            <p class="small">7*24小时真诚守候</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!--直播-->
+            <div class=" third clearfix">
+                <div class="show">
+                    <div class="tab_head">
+                        <ul class="clearfix if_show_us_" id="tabHead">
+                            <li class="first cur">
+                                <p class="th_bg"><img src="../images/zb.png">直播</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab_cont">
+                        <div class="tc_wrap" style="display: block;">
+                            <div class="th">
+                                <ul class="date clearfix">
+                                    <li style="width:19.9%" class="cur"><b>09.12</b><br><span>星期三</span></li>
+                                    <li style="width:19.9%" class=""><b>09.13</b><br><span>星期四</span></li>
+                                    <li style="width:19.9%" class=""><b>09.14</b><br><span>星期五</span></li>
+                                    <li style="width:19.9%" class=""><b>09.15</b><br><span>星期六</span></li>
+                                    <li style="width:19.9%" class=""><b>09.16</b><br><span>星期日</span></li>
+                                </ul>
+                                <img src="../images/radius.png" alt="" class="circle" style="left:10%">
+                            </div>
+
+                            <div class="tc">
+                                <ul class="tc_info" style="display:block;">
+                                    <li class="bg">
+                                        <p class="width1"><span>16:00---18:00</span></p>
+                                        <p class="width2 width_end"><span>一个人的劫镖（第七期）</span></p>
+                                        <p class="width3 book"><span><a style="color:#ff4040;" class="if_show_us_lit" href="">我要订阅</a></span></p>
+                                    </li>
+                                </ul>
+
+                                <ul class="tc_info" style="">
+                                    <li class="bg">
+                                        <p class="width1"><span>20:00---22:00</span></p>
+                                        <p class="width2 width_end"><span>GM主题直播</span></p>
+                                        <p class="width3 book"><span><a style="color:#ff4040;" class="if_show_us_lit" href="">我要订阅</a></span></p>
+                                    </li>
+                                </ul>
+
+                                <ul class="tc_info" style="">
+                                    <li class="bg">
+                                        <p class="width1"><span>16:00---18:00</span></p>
+                                        <p class="width2 width_end"><span>剑侠百题斩（第十八期）</span></p>
+                                        <p class="width3 book"><span><a style="color:#ff4040;" class="if_show_us_lit" href="">我要订阅</a></span></p>
+                                    </li>
+                                </ul>
+
+                                <ul class="tc_info" style="">
+                                    <li class="bg"><div class="no_anything">该天没有任何活动</div></li>
+                                </ul>
+
+                                <ul class="tc_info" style="">
+                                    <li class="bg"><div class="no_anything">该天没有任何活动</div></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="links">
+                    <a href=""><span>xoyo逍遥网</span></a>
+                    <a href=""><span>金山游戏中心</span></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--尾部-->
+    <div class="footer">
+        <div class="wrap">
+            <div class="bottom">
+                <p class="site">
+                    <a href="">关于我们</a>|
+                    <a href="">服务协议</a>|
+                    <a href="">客服中心</a>|
+                    <a href="">联系我们</a>|
+                    <a href="">诚聘英才</a>|
+                    <a href="">站点地图</a>|
+                    <a href="">在线举报</a>|
+                    <a href="">投诉与表扬</a>
+                </p>
+                <p class="copyright">Copyright © 2005-2018 Seasungame Corporation.All rights reserved.&nbsp;<b>成都西山居世游科技有限公司</b>&nbsp;版权所有</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="kefuzhongxin.js"></script>
+
+</body>
+</html>
